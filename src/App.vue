@@ -1,5 +1,11 @@
 <template>
   <div>
+    <form>
+      <h4>Создание поста</h4>
+      <input type="text" placeholder="Название" />
+      <input type="text" placeholder="Описание" />
+      <button>Создать</button>
+    </form>
     <div v-for="post in posts" class="post">
       <div><strong>Название:</strong> {{ post.title }}</div>
       <div><strong>Описание:</strong> {{ post.body }}</div>

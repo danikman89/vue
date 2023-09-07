@@ -1,11 +1,7 @@
 <template>
-  <button @click="addLike">like</button>
-  <button @click="addDislike">dislike</button>
-  <div>
-    Кол-во лайков: <strong>{{ likes }}</strong>
-  </div>
-  <div>
-    Кол-во дизлайков: <strong>{{ dislikes }}</strong>
+  <div class="post">
+    <div><strong>Название:</strong> пост о мышах и людях</div>
+    <div><strong>Описание:</strong> мыши белые и пушичтые</div>
   </div>
 </template>
 

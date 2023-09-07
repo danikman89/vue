@@ -1,7 +1,17 @@
 <template>
-  <div class="post">
-    <div><strong>Название:</strong> пост о мышах и людях</div>
-    <div><strong>Описание:</strong> мыши белые и пушичтые</div>
+  <div>
+    <div class="post">
+      <div><strong>Название:</strong> пост о мышах и людях</div>
+      <div><strong>Описание:</strong> мыши белые и пушичтые</div>
+    </div>
+    <div class="post">
+      <div><strong>Название:</strong> пост о мышах и людях</div>
+      <div><strong>Описание:</strong> мыши белые и пушичтые</div>
+    </div>
+    <div class="post">
+      <div><strong>Название:</strong> пост о мышах и людях</div>
+      <div><strong>Описание:</strong> мыши белые и пушичтые</div>
+    </div>
   </div>
 </template>
 
@@ -24,4 +34,16 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.post {
+  padding: 15px;
+  border: 2px solid teal;
+  margin-top: 15px;
+}
+</style>

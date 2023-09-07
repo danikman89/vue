@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <form>
+    <form @submit.prevent>
       <h4>Создание поста</h4>
       <input
         v-bind:value="title"
@@ -39,7 +39,14 @@ export default {
     };
   },
   methods: {
-    createPost() {},
+    createPost() {
+      const newPost = {
+        id: Date.now(),
+        title: this.title,
+        body: this.body,
+      };
+      this.posts.push(newPost);
+    },
     inputValue(e) {
       this.title = e.target.value;
     },

@@ -1,9 +1,15 @@
 <template>
-  <div>hello world</div>
+  <div>Кол-во лайков {{ likes }}</div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      likes: 5,
+    };
+  },
+};
 </script>
 
 <style scoped></style>

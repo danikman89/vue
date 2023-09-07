@@ -22,7 +22,7 @@ export default {
       this.likes += 1;
     },
     addDislike() {
-      this.dislikes -= 1;
+      this.dislikes += 1;
     },
   },
 };

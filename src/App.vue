@@ -2,9 +2,9 @@
   <div class="main">
     <form>
       <h4>Создание поста</h4>
-      <input class="input" type="text" placeholder="Название" />
-      <input class="input" type="text" placeholder="Описание" />
-      <button class="btn">Создать</button>
+      <input v-bind:value="title" class="input" type="text" placeholder="Название" />
+      <input v-bind:value="body" class="input" type="text" placeholder="Описание" />
+      <button class="btn" @click="createPost">Создать</button>
     </form>
     <div v-for="post in posts" class="post">
       <div><strong>Название:</strong> {{ post.title }}</div>
@@ -22,15 +22,12 @@ export default {
         { id: 2, title: 'кошки', body: 'белые и черные' },
         { id: 3, title: 'собаки', body: 'белые и черные' },
       ],
+      title: '',
+      body: '',
     };
   },
   methods: {
-    addLike() {
-      this.likes += 1;
-    },
-    addDislike() {
-      this.dislikes += 1;
-    },
+    createPost() {},
   },
 };
 </script>

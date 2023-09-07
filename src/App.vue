@@ -1,9 +1,11 @@
 <template>
+  <button>like</button>
+  <button>dislike</button>
   <div>
-    Кол-во лайков <strong>{{ likes }}</strong>
+    Кол-во лайков: <strong>{{ likes }}</strong>
   </div>
   <div>
-    Кол-во дизлайков <strong>{{ dislikes }}</strong>
+    Кол-во дизлайков: <strong>{{ dislikes }}</strong>
   </div>
 </template>
 

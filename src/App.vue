@@ -2,8 +2,20 @@
   <div class="main">
     <form>
       <h4>Создание поста</h4>
-      <input v-bind:value="title" class="input" type="text" placeholder="Название" />
-      <input v-bind:value="body" class="input" type="text" placeholder="Описание" />
+      <input
+        v-bind:value="title"
+        @input="inputValue"
+        class="input"
+        type="text"
+        placeholder="Название"
+      />
+      <input
+        v-bind:value="body"
+        @input="body = $event.target.value"
+        class="input"
+        type="text"
+        placeholder="Описание"
+      />
       <button class="btn" @click="createPost">Создать</button>
     </form>
     <div v-for="post in posts" class="post">
@@ -28,6 +40,9 @@ export default {
   },
   methods: {
     createPost() {},
+    inputValue(e) {
+      this.title = e.target.value;
+    },
   },
 };
 </script>

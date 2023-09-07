@@ -46,6 +46,8 @@ export default {
         body: this.body,
       };
       this.posts.push(newPost);
+      this.body = '';
+      this.title = '';
     },
     inputValue(e) {
       this.title = e.target.value;

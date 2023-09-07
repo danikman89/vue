@@ -1,16 +1,8 @@
 <template>
   <div>
-    <div class="post">
-      <div><strong>Название:</strong> пост о мышах и людях</div>
-      <div><strong>Описание:</strong> мыши белые и пушичтые</div>
-    </div>
-    <div class="post">
-      <div><strong>Название:</strong> пост о мышах и людях</div>
-      <div><strong>Описание:</strong> мыши белые и пушичтые</div>
-    </div>
-    <div class="post">
-      <div><strong>Название:</strong> пост о мышах и людях</div>
-      <div><strong>Описание:</strong> мыши белые и пушичтые</div>
+    <div v-for="post in posts" class="post">
+      <div><strong>Название:</strong> {{ post.title }}</div>
+      <div><strong>Описание:</strong> {{ post.body }}</div>
     </div>
   </div>
 </template>
@@ -19,8 +11,11 @@
 export default {
   data() {
     return {
-      likes: 0,
-      dislikes: 0,
+      posts: [
+        { id: 1, title: 'мыши', body: 'белые и черные' },
+        { id: 2, title: 'кошки', body: 'белые и черные' },
+        { id: 3, title: 'собаки', body: 'белые и черные' },
+      ],
     };
   },
   methods: {

@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <button>
+    <slot></slot>
+  </button>
 </template>
 
 <script>
@@ -11,7 +13,6 @@ export default {};
   background: none;
   padding: 10px 20px;
   color: teal;
-  align-self: flex-end;
   border: 1px solid teal;
   margin-top: 15px;
   cursor: pointer;

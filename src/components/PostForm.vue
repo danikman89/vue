@@ -43,15 +43,7 @@ form {
   margin-top: 15px;
 }
 
-.btn {
-  background: none;
-  padding: 10px 20px;
-  color: teal;
-  align-self: flex-end;
-  border: 1px solid teal;
-  margin-top: 15px;
-  cursor: pointer;
-}
+
 
 .btn:hover {
   color: white;

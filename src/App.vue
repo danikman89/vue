@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <post-form />
+    <post-form @create="createPost" />
     <post-list :posts="posts" />
   </div>
 </template>
@@ -22,15 +22,8 @@ export default {
   },
   components: { PostForm, PostList },
   methods: {
-    createPost() {
-      const newPost = {
-        id: Date.now(),
-        title: this.title,
-        body: this.body,
-      };
-      this.posts.push(newPost);
-      this.body = '';
-      this.title = '';
+    createPost(post) {
+      this.posts.push(post);
     },
     inputValue(e) {
       this.title = e.target.value;

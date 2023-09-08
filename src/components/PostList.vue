@@ -6,7 +6,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    posts: {
+      type: Array,
+      default: [],
+      required: true,
+    },
+  },
+};
 </script>
 
 <style scoped>

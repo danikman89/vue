@@ -1,5 +1,5 @@
 <template>
-  <button>
+  <button class="btn">
     <slot></slot>
   </button>
 </template>
@@ -14,7 +14,6 @@ export default {};
   padding: 10px 20px;
   color: teal;
   border: 1px solid teal;
-  margin-top: 15px;
   cursor: pointer;
 }
 </style>

@@ -5,12 +5,16 @@
       <div><strong>Описание:</strong> {{ post.body }}</div>
     </div>
     <div class="btns">
-      <button>Удалить</button>
+      <my-button>Удалить</my-button>
     </div>
   </div>
 </template>
 <script>
+import MyButton from './UI/MyButton.vue';
 export default {
+  components: {
+    MyButton,
+  },
   props: {
     post: {
       type: Object,
